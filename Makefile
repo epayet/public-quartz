@@ -18,7 +18,7 @@ sync:
 	rm -rf $(CONTENT_DEST)
 	mkdir -p $(CONTENT_DEST)
 	@echo "Copying fresh notes from Dropbox..."
-	cp -r $(CONTENT_SRC)/* $(CONTENT_DEST)
+	cp -r $(CONTENT_SRC)* $(CONTENT_DEST)
 	npx quartz sync
 
 build:
