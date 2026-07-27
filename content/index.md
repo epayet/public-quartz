@@ -8,3 +8,5 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 ---
 
 I should put some more interesting stuff here.
+
+test link: [[test link]]
