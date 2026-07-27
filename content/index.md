@@ -5,4 +5,6 @@ title: Welcome to Quartz
 This is a blank Quartz installation.
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
-link to [[test quartz]]
+---
+
+I should put some more interesting stuff here.

@@ -8,10 +8,9 @@ CONTENT_DEST := content
 
 help:
 	@echo "Available commands:"
-	@echo "  make copy      - Safely mirror Obsidian notes into the git repository"
 	@echo "  make build     - Build the Quartz site locally"
 	@echo "  make serve     - Run the local preview server"
-	@echo "  make publish   - Clear local content, copy fresh files, and sync to GitHub"
+	@echo "  make sync      - Clear local content, copy fresh files, and sync to GitHub"
 
 sync:
 	@echo "Clearing old content directory..."
