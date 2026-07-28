@@ -12,12 +12,15 @@ help:
 	@echo "  make serve     - Run the local preview server"
 	@echo "  make sync      - Clear local content, copy fresh files, and sync to GitHub"
 
-sync:
+copy:
 	@echo "Clearing old content directory..."
 	rm -rf $(CONTENT_DEST)
 	mkdir -p $(CONTENT_DEST)
 	@echo "Copying fresh notes from Dropbox..."
 	cp -r $(CONTENT_SRC)* $(CONTENT_DEST)
+
+sync:
+	make copy
 	npx quartz sync
 
 build:
