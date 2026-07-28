@@ -9,4 +9,15 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 
 I should put some more interesting stuff here.
 
-test link: [[test link]]
+# heading 1
+content
+## heading 2
+content **booold**
+### heading 3
+_italic_ iaosteuh
+```python
+# this is supposed to do something
+some = call('wat')
+```
+
+test link: [[Public/Quartz/Test Page]]
