@@ -4,10 +4,11 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
-  analytics:
-    provider: plausible
+  # analytics:
+    # provider: plausible
   locale: en-US
   baseUrl: emmanuel-payet.me/public-quartz
+  # baseUrl: localhost:8080
   ignorePatterns:
     - private
     - templates
@@ -208,7 +209,7 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: true
+    enabled: false
     options:
       provider: giscus
       options:
