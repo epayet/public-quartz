@@ -15,6 +15,14 @@
   --code-string: var(--springGreen) !important;     // #98BB6C, muted Kanagawa green
 
 
+  // fix kanagawa sticky header, keep the same background
+  @media all and (max-width: 800px) {
+    .page > div#quartz-body div.sidebar.left {
+      background-color: var(--background-primary);
+    }
+  }
+
+
   figure[data-rehype-pretty-code-figure] pre {
     background-color: var(--sumiInk3) !important; // #363646 — force visible bg over whatever's blocking it
   }
@@ -26,8 +34,22 @@
   --text-title-h2: var(--lotusBlue4) !important;    // was --lotusOrange (#cc6d00); matching blue for h2
   --code-string: var(--lotusGreen) !important;      // #6f894e, muted Kanagawa green
 
+  // fix kanagawa sticky header, keep the same background
+  @media all and (max-width: 800px) {
+    .page > div#quartz-body div.sidebar.left {
+      background-color: var(--paper-like);
+    }
+  }
+
 
   figure[data-rehype-pretty-code-figure] pre {
     background-color: #E0E2E5 !important; // force visible bg over whatever's blocking it
   }
+}
+
+// Override theme default to display the title. Why you no title kanagawa?
+@media (max-width: 800px) {
+    .page-title {
+        display: block !important;
+    }
 }
