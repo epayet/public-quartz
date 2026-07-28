@@ -20,4 +20,4 @@ _italic_ iaosteuh
 some = call('wat')
 ```
 
-test link: [[Public/Quartz/Test Page]]
+test link: [[Test Page]]
