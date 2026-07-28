@@ -1,3 +1,33 @@
 @use "./variables.scss" as *;
-
 // put your custom CSS here!
+
+// Kanagawa tweaks — using !important since the theme plugin's own
+// variables are also declared !important, so this guarantees we win.
+
+// Note: code-block coloring/background is no longer handled here — Shiki
+// is now set to the kanagawa-lotus/kanagawa-dragon themes directly in
+// quartz.config.yaml, with keepBackground: true, so it owns its own
+// backgrounds and syntax colors natively. No CSS override needed for that.
+
+// --- Dark mode ---
+:root[saved-theme="dark"] {
+  --text-title-h2: var(--crystalBlue) !important;   // was --neutral-orange (#d65d0e); cool blue instead
+  --code-string: var(--springGreen) !important;     // #98BB6C, muted Kanagawa green
+
+
+  figure[data-rehype-pretty-code-figure] pre {
+    background-color: var(--sumiInk3) !important; // #363646 — force visible bg over whatever's blocking it
+  }
+}
+
+// --- Light mode ---
+:root[saved-theme="light"] {
+  --paper-like: #ECEDEF !important;                 // was #F2EFE9 (warm cream); cooler, less orange cast
+  --text-title-h2: var(--lotusBlue4) !important;    // was --lotusOrange (#cc6d00); matching blue for h2
+  --code-string: var(--lotusGreen) !important;      // #6f894e, muted Kanagawa green
+
+
+  figure[data-rehype-pretty-code-figure] pre {
+    background-color: #E0E2E5 !important; // force visible bg over whatever's blocking it
+  }
+}
