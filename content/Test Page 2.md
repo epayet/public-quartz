@@ -10,5 +10,3 @@ _italic_ iaosteuh
 # this is supposed to do something
 some = call('wat')
 ```
-
-test link: [[Test Page 2]]

@@ -1,23 +1,12 @@
 ---
-title: Welcome to Quartz
+title: Hey
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Hi.
 
----
+<details>
+<summary>Ninja no jutsu</summary>
 
-I should put some more interesting stuff here.
+![[_attachements/ninja.webm]]
 
-# heading 1
-content
-## heading 2
-content **booold**
-### heading 3
-_italic_ iaosteuh
-```python
-# this is supposed to do something
-some = call('wat')
-```
-
-test link: [[Test Page]]
+</details>
